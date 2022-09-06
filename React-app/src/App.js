@@ -7,7 +7,7 @@ const [Name, setName] = useState('')
 const [CreditCard, setCreditCard] = useState('')
 
 const getDetails = () => {
-     axios.get('http://44.211.111.11:3001')
+     axios.get('http://ec2-44-211-111-11.compute-1.amazonaws.com:3001')
      .then(res => {
       console.log(res.data)
       setName(res.data.name)
