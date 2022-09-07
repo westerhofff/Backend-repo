@@ -15,9 +15,6 @@ jobs:
      - name: Setup node
        uses: actions/setup-node@v2
 
-     - name: Install dependencies
-       run: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-
      - name: Install more dependencies
        run:  npm install
 
