@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
     const subject = 
     ({
         "name":"Name - Precious Okwu",
-        "CreditCard":"CreditCard - xxxxx-xxxxx-xxxx-0897"
+        "CreditCard":"Credit Card - xxxxx-xxxxx-xxxx-0897"
     });
 
     res.status(201).json(subject);
