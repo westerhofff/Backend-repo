@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ec2-user/node/Backend-repo
+    overwrite: true
+hooks:
+  BeforeInstall:
+    - location: Script/BeforeInstall.sh
+      timeout: 300
+  AfterInstall:
+    - location: Script/RunNode.sh
+      timeout: 300
+      
