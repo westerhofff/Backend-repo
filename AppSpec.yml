@@ -3,12 +3,21 @@ os: linux
 files:
   - source: /
     destination: /home/ec2-user/node/Backend-repo
-    overwrite: true
 hooks:
-  BeforeInstall:
-    - location: Script/BeforeInstall.sh
-      timeout: 300
+ApplicationStop:
+DownloadBundle:
+ BeforeInstall:
+   - location: scripts/BeforeInstall.sh
+     timeout: 300
+     runas: ec2-user
+Install:
   AfterInstall:
-    - location: Script/RunNode.sh
+    - location: scripts/AfterInstall.sh
       timeout: 300
+      runas: ec2-user
+  ApplicationStart:
+    - location: scripts/application_start.sh
+      timeout: 300
+      runas: ec2-user
+# ValidateService:
       
