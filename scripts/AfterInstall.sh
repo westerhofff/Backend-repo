@@ -1,4 +1,4 @@
 #!/bin/bash
-service httpd start
 npm install
+systemctl start httpd
 pm2 restart backend
