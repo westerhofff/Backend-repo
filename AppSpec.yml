@@ -4,8 +4,6 @@ files:
   - source: /
     destination: /home/ec2-user/node/Backend-repo
 hooks:
-ApplicationStop:
-DownloadBundle:
  BeforeInstall:
    - location: scripts/BeforeInstall.sh
      timeout: 300
