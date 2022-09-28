@@ -1,3 +1,3 @@
 #!/bin/bash
-sudo yum install -y httpd
-npm install
+/home/ec2-user/node/Backend-repo
+pm2 start backend

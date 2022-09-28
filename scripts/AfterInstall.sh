@@ -1,4 +1,3 @@
 #!/bin/bash
-systemctl enable httpd
-systemctl start httpd
-pm2 restart backend
+sleep 10
+nc -zv 44.211.111.11 3001
