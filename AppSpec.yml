@@ -9,6 +9,9 @@ hooks:
      timeout: 180
      runas: root
 Install:
+   - location: scripts/Install.sh
+      timeout: 300
+      runas: root
   AfterInstall:
     - location: scripts/AfterInstall.sh
       timeout: 300
@@ -18,4 +21,3 @@ Install:
   #     timeout: 300
   #     runas: ec2-user
 # ValidateService:
-      
