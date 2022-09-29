@@ -1,3 +1,3 @@
 #!/bin/bash
-sleep 15
+sleep 10
 nc -zv 44.211.111.11 3001

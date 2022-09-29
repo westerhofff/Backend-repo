@@ -18,8 +18,8 @@ hooks:
 Install:
    - location: scripts/Install.sh
       timeout: 300
-      runas: ec2-user
-  AfterInstall:
+      runas: ec2-user			
+AfterInstall:
     - location: scripts/AfterInstall.sh
       timeout: 300
       runas: ec2-user
