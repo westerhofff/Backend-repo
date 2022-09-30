@@ -10,7 +10,7 @@ hooks:
      runas: root
 Install:
    - location: scripts/Install.sh
-      timeout: 300
+      timeout: 120
       runas: ec2-user			
 AfterInstall:
     - location: scripts/AfterInstall.sh
