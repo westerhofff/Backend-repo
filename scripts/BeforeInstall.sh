@@ -1,5 +1,4 @@
 #!/bin/bash
-sudo yum update -y
 
 #install pm2 modeule globally
 
