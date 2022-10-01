@@ -1,3 +1,3 @@
 #!/bin/bash
-/home/ec2-user/node/Backend-repo
+cd /home/ec2-user/node/Backend-repo
 yum install httpd -y
