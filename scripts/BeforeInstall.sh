@@ -5,5 +5,5 @@ sudo yum update -y
 pm2 update
 
 #delete former version
-cd /home/ec2-user/node
-rm -rf Backend-repo
+# cd /home/ec2-user/node
+# rm -rf Backend-repo
